@@ -10,6 +10,10 @@ app.get("/", (req, res) => {
     });
 });
 
+app.get("/product", (req,res) => {
+    res.json ([{nome: 'celular'}, {nome: 'smart TV'}, {nome: 'notebook'}]);
+});
+
 // Definição da Porta
 
 const PORT = 3000;
